@@ -25,7 +25,7 @@ while 1:
 
 	def calculateDistance(TRIG, ECHO):
 		GPIO.output(TRIG,False) #waiting for sensor to settle
-		time.sleep(2)
+		time.sleep(0.000002)
 
 		GPIO.output(TRIG,True)
 		time.sleep(0.00001)
